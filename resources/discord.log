@@ -1,0 +1,874 @@
+2020-02-20 12:00:26,903:DEBUG:discord.client: on_ready has successfully been registered as an event
+2020-02-20 12:00:26,903:DEBUG:discord.client: on_message has successfully been registered as an event
+2020-02-20 12:00:26,903:INFO:discord.client: logging in using static token
+2020-02-20 12:00:27,280:DEBUG:discord.http: GET https://discordapp.com/api/v7/users/@me with None has returned 200
+2020-02-20 12:00:27,281:DEBUG:discord.http: GET https://discordapp.com/api/v7/users/@me has received {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True, 'email': None, 'verified': True, 'locale': 'en-US', 'mfa_enabled': False, 'flags': 0}
+2020-02-20 12:00:27,323:DEBUG:discord.http: GET https://discordapp.com/api/v7/gateway with None has returned 200
+2020-02-20 12:00:27,324:DEBUG:discord.http: GET https://discordapp.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2020-02-20 12:00:27,646:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2020-02-20 12:00:27,647:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:27,647:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-3lw3",{"micros":0.0}]']}}
+2020-02-20 12:00:27,648:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:27,648:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:00:27,651:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:00:27,652:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2020-02-20 12:00:27,749:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:27,749:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:00:27,749:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:27,820:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:27,821:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': '깨끗이', 'mfa_enabled': False, 'id': '674818467563700244', 'email': None, 'discriminator': '9159', 'bot': True, 'avatar': None}, 'session_id': 'ee4f327a0397f93b71264474d53344e9', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '674034866840666122'}], 'application': {'id': '674818467563700244', 'flags': 0}, '_trace': ['["gateway-prd-main-3lw3",{"micros":46447,"calls":["discord-sessions-prd-1-32",{"micros":44471,"calls":["start_session",{"micros":41806,"calls":["api-prd-main-dl56",{"micros":38400,"calls":["get_user",{"micros":3252},"add_authorized_ip",{"micros":2157},"get_guilds",{"micros":2832},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1919,"calls":[]}]}]}]']}}
+2020-02-20 12:00:27,821:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:27,821:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-3lw3",{"micros":46447,"calls":["discord-sessions-prd-1-32",{"micros":44471,"calls":["start_session",{"micros":41806,"calls":["api-prd-main-dl56",{"micros":38400,"calls":["get_user",{"micros":3252},"add_authorized_ip",{"micros":2157},"get_guilds",{"micros":2832},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1919,"calls":[]}]}]}] (Session ID: ee4f327a0397f93b71264474d53344e9).
+2020-02-20 12:00:27,835:DEBUG:discord.client: Dispatching event connect
+2020-02-20 12:00:27,836:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:27,836:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'application_id': None, 'verification_level': 0, 'explicit_content_filter': 0, 'roles': [{'position': 0, 'permissions': 104324673, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '674034866840666122', 'hoist': False, 'color': 0}, {'position': 1, 'permissions': 104324681, 'name': 'new role', 'mentionable': False, 'managed': False, 'id': '675001628276817921', 'hoist': False, 'color': 0}], 'vanity_url_code': None, 'unavailable': False, 'presences': [{'user': {'id': '312242775536173068'}, 'status': 'dnd', 'game': None, 'client_status': {'desktop': 'dnd'}, 'activities': []}, {'user': {'id': '674818467563700244'}, 'status': 'online', 'game': None, 'client_status': {'web': 'online'}, 'activities': []}], 'afk_timeout': 300, 'rules_channel_id': None, 'features': [], 'channels': [{'user_limit': 0, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '674034867570212868', 'bitrate': 64000}, {'user_limit': 0, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '674034867570212870', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '674034867570212868', 'name': 'general', 'last_message_id': '674855471659614218', 'id': '674034867570212872'}, {'user_limit': 0, 'type': 2, 'position': 0, 'permission_overwrites': [], 'parent_id': '674034867570212870', 'name': 'General', 'id': '674034867570212874', 'bitrate': 64000}, {'user_limit': 0, 'type': 4, 'position': 1, 'permission_overwrites': [], 'name': 'Discord Bots', 'id': '674818670542848010', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '674818670542848010', 'name': '깨끗이', 'last_message_id': '680120827202633758', 'id': '674818695624785936'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [], 'parent_id': '674818670542848010', 'nsfw': False, 'name': 'clean', 'last_message_id': '680122093186318342', 'id': '680120877681213477'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 3, 'permission_overwrites': [], 'parent_id': '674818670542848010', 'nsfw': False, 'name': 'sdffdsfds', 'last_message_id': '680122827629789284', 'id': '680122283385421866'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 4, 'permission_overwrites': [], 'parent_id': '674818670542848010', 'nsfw': False, 'name': 'fsdasf', 'last_message_id': '680126408562835475', 'id': '680124640852705307'}], 'region': 'us-west', 'splash': None, 'system_channel_flags': 0, 'lazy': True, 'premium_tier': 0, 'name': 'KDW Journals', 'system_channel_id': '674034867570212872', 'banner': None, 'discovery_splash': None, 'emojis': [], 'large': False, 'default_message_notifications': 0, 'owner_id': '312242775536173068', 'members': [{'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, {'user': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}], 'public_updates_channel_id': None, 'preferred_locale': 'en-US', 'icon': '18edfec9152cc12bc39f82d6c8bdacbb', 'voice_states': [], 'description': None, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'id': '674034866840666122', 'premium_subscription_count': 0, 'member_count': 2, 'afk_channel_id': None, 'mfa_level': 0}}
+2020-02-20 12:00:27,837:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:27,838:DEBUG:discord.client: Dispatching event guild_available
+2020-02-20 12:00:29,839:DEBUG:discord.client: Dispatching event ready
+2020-02-20 12:00:33,042:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:33,043:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 3, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225234, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:00:33,044:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:33,045:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:00:34,044:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:34,045:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:00:34.959000+00:00', 'pinned': False, 'nonce': '680126668337053696', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126672888266793', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'lmfao', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:00:34,045:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:34,046:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:00:34,175:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126672888266793 with None has returned 204
+2020-02-20 12:00:34,176:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126672888266793 has received 
+2020-02-20 12:00:34,182:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:34,183:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 5, 'op': 0, 'd': {'id': '680126672888266793', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:00:34,183:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:34,184:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:00:34,184:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:00:34,317:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:34,319:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 6, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:00:35.271000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126674196889654', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:00:34,319:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:34,319:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:00:34,325:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:00:34,326:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680126674196889654', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:00:35.271000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:00:37,599:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:37,599:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 7, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225238, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:00:37,599:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:37,599:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:00:41,205:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:41,206:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 8, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:00:42.151000+00:00', 'pinned': False, 'nonce': '680126698376658944', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126703053439004', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'lMFaO', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:00:41,206:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:41,206:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:00:41,366:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126703053439004 with None has returned 204
+2020-02-20 12:00:41,366:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126703053439004 has received 
+2020-02-20 12:00:41,372:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:41,372:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 9, 'op': 0, 'd': {'id': '680126703053439004', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:00:41,373:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:41,373:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:00:41,373:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:00:41,597:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:00:41,597:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 10, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:00:42.523000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126704613851149', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:00:41,598:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:00:41,599:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:00:41,645:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:00:41,646:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680126704613851149', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:00:42.523000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:01:08,900:DEBUG:discord.gateway: Keeping websocket alive with sequence 10.
+2020-02-20 12:01:08,902:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:01:09,007:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:09,008:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:01:09,008:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:10,930:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:10,931:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 11, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225271, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:10,931:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:10,931:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:01:11,190:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:11,191:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 12, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:01:12.091000+00:00', 'pinned': False, 'nonce': '680126823954120704', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126828631031808', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'bitch', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:11,191:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:11,191:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:01:11,453:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126828631031808 with None has returned 204
+2020-02-20 12:01:11,454:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126828631031808 has received 
+2020-02-20 12:01:11,458:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:11,458:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 13, 'op': 0, 'd': {'id': '680126828631031808', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:11,458:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:11,458:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:01:11,459:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:01:11,592:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:11,593:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 14, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:01:12.512000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126830396833853', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:11,594:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:11,595:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:01:11,605:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:01:11,607:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680126830396833853', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:01:12.512000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:01:17,354:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:17,355:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 15, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225278, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:17,355:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:17,356:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:01:19,395:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:19,396:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 16, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:01:20.261000+00:00', 'pinned': False, 'nonce': '680126858267721728', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126862898233482', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'whore', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:19,396:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:19,396:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:01:19,535:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126862898233482 with None has returned 204
+2020-02-20 12:01:19,535:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126862898233482 has received 
+2020-02-20 12:01:19,539:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:19,539:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 17, 'op': 0, 'd': {'id': '680126862898233482', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:19,539:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:19,539:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:01:19,540:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:01:19,667:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:19,668:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 18, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:01:20.624000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126864421158931', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:19,668:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:19,668:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:01:19,677:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:01:19,678:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680126864421158931', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:01:20.624000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:01:22,493:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:22,493:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 19, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225283, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:22,493:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:22,494:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:01:22,575:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:22,575:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 20, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:01:23.531000+00:00', 'pinned': False, 'nonce': '680126871928569856', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126876613607514', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'slut', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:22,576:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:22,576:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:01:22,773:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126876613607514 with None has returned 204
+2020-02-20 12:01:22,773:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126876613607514 has received 
+2020-02-20 12:01:22,774:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:22,775:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 21, 'op': 0, 'd': {'id': '680126876613607514', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:22,775:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:22,775:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:01:22,775:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:01:22,932:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:22,933:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 22, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:01:23.891000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126878123819023', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:22,933:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:22,933:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:01:22,943:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:01:22,943:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680126878123819023', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:01:23.891000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:01:40,062:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:40,063:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 23, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225301, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:40,063:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:40,064:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:01:40,695:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:40,696:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 24, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:01:41.564000+00:00', 'pinned': False, 'nonce': '680126947530899456', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126952249884747', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'hoe', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:40,696:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:40,696:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:01:40,939:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:40,940:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 25, 'op': 0, 'd': {'id': '680126952249884747', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:40,940:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:40,941:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:01:40,941:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:01:40,942:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126952249884747 with None has returned 204
+2020-02-20 12:01:40,942:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680126952249884747 has received 
+2020-02-20 12:01:41,093:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:41,095:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 26, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:01:42.048000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680126954279534642', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:41,095:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:41,096:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:01:41,102:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:01:41,102:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680126954279534642', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:01:42.048000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:01:47,800:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:47,801:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 27, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225308, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:47,802:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:47,802:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:01:50,154:DEBUG:discord.gateway: Keeping websocket alive with sequence 27.
+2020-02-20 12:01:50,155:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:01:50,257:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:50,257:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:01:50,258:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:55,033:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:55,034:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 28, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:01:55.878000+00:00', 'pinned': False, 'nonce': '680127007719161856', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127012286758926', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'prostitute', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:55,034:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:55,034:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:01:55,173:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127012286758926 with None has returned 204
+2020-02-20 12:01:55,174:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127012286758926 has received 
+2020-02-20 12:01:55,176:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:55,176:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 29, 'op': 0, 'd': {'id': '680127012286758926', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:55,177:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:55,177:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:01:55,177:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:01:55,312:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:01:55,312:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 30, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:01:56.270000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127013931057181', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:01:55,313:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:01:55,313:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:01:55,336:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:01:55,336:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127013931057181', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:01:56.270000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:02:10,697:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:02:10,698:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 31, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225331, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:02:10,698:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:02:10,699:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:02:21,654:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:02:21,655:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 32, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:02:22.564000+00:00', 'pinned': False, 'nonce': '680127119153430528', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127124215955487', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'blowjob', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:02:21,656:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:02:21,657:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:02:21,872:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127124215955487 with None has returned 204
+2020-02-20 12:02:21,873:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127124215955487 has received 
+2020-02-20 12:02:21,879:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:02:21,880:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 33, 'op': 0, 'd': {'id': '680127124215955487', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:02:21,880:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:02:21,881:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:02:21,882:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:02:22,067:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:02:22,068:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127125956984852', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:02:22.979000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:02:22,069:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:02:22,069:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 34, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:02:22.979000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127125956984852', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:02:22,070:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:02:22,070:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:02:31,055:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:02:31,056:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 35, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:02:31.928000+00:00', 'pinned': False, 'nonce': '680127159120953344', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127163491549221', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '69', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:02:31,056:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:02:31,057:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:02:31,405:DEBUG:discord.gateway: Keeping websocket alive with sequence 35.
+2020-02-20 12:02:31,406:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:02:31,518:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:02:31,519:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:02:31,519:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:02:37,425:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:02:37,425:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 36, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225358, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:02:37,426:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:02:37,426:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:02:40,108:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:02:40,109:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 37, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:02:40.963000+00:00', 'pinned': False, 'nonce': '680127196618031104', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127201387348099', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'sixtynine', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:02:40,109:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:02:40,110:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:02:51,852:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:02:51,852:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 38, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:02:52.718000+00:00', 'pinned': False, 'nonce': '680127246479917056', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127250690998321', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'no', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:02:51,853:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:02:51,853:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:02:56,163:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:02:56,163:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 39, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:02:56.987000+00:00', 'pinned': False, 'nonce': '680127263521374208', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127268596482129', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'ni', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:02:56,163:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:02:56,164:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:00,669:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:00,669:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 40, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:01.307000+00:00', 'pinned': False, 'nonce': '680127272023228416', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127286716268601', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'bad', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:00,670:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:00,670:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:01,006:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:01,007:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 41, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:01.874000+00:00', 'pinned': False, 'nonce': '680127284673249280', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127289094307915', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'stupid', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:01,008:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:01,008:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:01,592:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127289094307915 with None has returned 204
+2020-02-20 12:03:01,592:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127289094307915 has received 
+2020-02-20 12:03:01,593:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:01,593:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 42, 'op': 0, 'd': {'id': '680127289094307915', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:01,593:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:01,593:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:03:01,594:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:03:01,806:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:03:01,806:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127292420522043', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:03:02.667000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:03:01,895:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:01,895:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 43, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:02.667000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127292420522043', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:01,896:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:01,896:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:10,818:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:10,819:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 44, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225391, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:10,819:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:10,819:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:03:11,598:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:11,599:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 45, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:12.551000+00:00', 'pinned': False, 'nonce': '680127328621166592', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127333876760758', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'dumb', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:11,599:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:11,600:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:11,740:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127333876760758 with None has returned 204
+2020-02-20 12:03:11,741:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127333876760758 has received 
+2020-02-20 12:03:11,744:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:11,744:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 46, 'op': 0, 'd': {'id': '680127333876760758', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:11,745:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:11,745:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:03:11,745:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:03:11,937:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:03:11,938:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127335114080266', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:03:12.846000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:03:11,941:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:11,942:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 47, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:12.846000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127335114080266', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:11,942:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:11,943:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:12,658:DEBUG:discord.gateway: Keeping websocket alive with sequence 47.
+2020-02-20 12:03:12,660:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:03:12,764:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:12,765:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:03:12,765:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:19,410:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:19,410:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 48, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225400, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:19,410:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:19,411:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:03:20,022:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:20,023:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 49, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:20.866000+00:00', 'pinned': False, 'nonce': '680127364117561344', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127368752398351', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'idiot', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:20,024:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:20,024:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:20,176:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127368752398351 with None has returned 204
+2020-02-20 12:03:20,176:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127368752398351 has received 
+2020-02-20 12:03:20,178:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:20,178:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 50, 'op': 0, 'd': {'id': '680127368752398351', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:20,179:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:20,179:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:03:20,179:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:03:20,364:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:03:20,364:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127370451091457', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:03:21.271000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:03:20,640:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:20,640:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 51, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:21.271000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127370451091457', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:20,641:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:20,641:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:30,060:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:30,060:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 52, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225410, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:30,061:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:30,061:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:03:31,390:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:31,391:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 53, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:32.078000+00:00', 'pinned': False, 'nonce': '680127411110543360', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127415778934800', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'damb', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:31,391:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:31,392:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:34,669:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:34,670:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 54, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225415, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:34,671:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:34,672:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:03:39,376:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:39,377:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 55, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:40.247000+00:00', 'pinned': False, 'nonce': '680127444530757632', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127450042204275', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'damn', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:39,377:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:39,377:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:39,692:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127450042204275 with None has returned 204
+2020-02-20 12:03:39,692:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127450042204275 has received 
+2020-02-20 12:03:39,698:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:39,699:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 56, 'op': 0, 'd': {'id': '680127450042204275', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:39,700:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:39,700:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:03:39,701:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:03:39,895:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:03:39,896:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127452311191613', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:03:40.788000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:03:39,897:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:39,897:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 57, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:40.788000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127452311191613', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:39,898:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:39,898:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:43,472:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:43,472:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 58, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225424, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:43,472:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:43,473:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:03:45,085:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:45,086:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 59, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:46.024000+00:00', 'pinned': False, 'nonce': '680127469650444288', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127474272567331', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'darn', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:45,086:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:45,086:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:48,981:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:48,982:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 60, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225429, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:48,982:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:48,982:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:03:51,153:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:51,153:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 61, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:52.026000+00:00', 'pinned': False, 'nonce': '680127494778519552', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127499447173135', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'god da', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:51,154:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:51,154:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:51,358:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127499447173135 with None has returned 204
+2020-02-20 12:03:51,358:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127499447173135 has received 
+2020-02-20 12:03:51,362:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:51,362:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 62, 'op': 0, 'd': {'id': '680127499447173135', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:51,363:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:51,363:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:03:51,363:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:03:51,566:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:51,567:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 63, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:52.405000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127501036421164', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:51,568:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:51,569:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:51,572:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:03:51,572:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127501036421164', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:03:52.405000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:03:53,911:DEBUG:discord.gateway: Keeping websocket alive with sequence 63.
+2020-02-20 12:03:53,911:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:03:54,012:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:54,013:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:03:54,013:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:56,478:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:56,479:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 64, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225436, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:56,479:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:56,479:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:03:59,145:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:59,146:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 65, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:03:59.951000+00:00', 'pinned': False, 'nonce': '680127528030961664', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127532686901391', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'god', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:59,146:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:59,147:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:59,338:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127532686901391 with None has returned 204
+2020-02-20 12:03:59,338:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127532686901391 has received 
+2020-02-20 12:03:59,354:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:59,355:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 66, 'op': 0, 'd': {'id': '680127532686901391', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:59,355:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:59,356:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:03:59,356:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:03:59,482:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:03:59,483:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 67, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:00.437000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127534725201977', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:03:59,484:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:03:59,484:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:03:59,501:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:03:59,502:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127534725201977', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:04:00.437000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:04:03,722:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:03,722:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 68, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225444, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:03,722:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:03,722:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:04:03,722:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:03,723:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 69, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:04.511000+00:00', 'pinned': False, 'nonce': '680127546892746752', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127551812665345', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'jesus', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:03,723:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:03,723:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:04:03,854:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127551812665345 with None has returned 204
+2020-02-20 12:04:03,854:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127551812665345 has received 
+2020-02-20 12:04:03,856:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:03,856:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 70, 'op': 0, 'd': {'id': '680127551812665345', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:03,856:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:03,856:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:04:03,857:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:04:04,056:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:04:04,056:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127553788575833', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:04:04.982000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:04:04,056:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:04,056:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 71, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:04.982000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127553788575833', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:04,057:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:04,057:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:04:09,481:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:09,482:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 72, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225450, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:09,482:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:09,483:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:04:11,383:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:11,384:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 73, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:12.003000+00:00', 'pinned': False, 'nonce': '680127578589102080', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127583236391057', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'christ', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:11,384:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:11,384:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:04:11,521:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127583236391057 with None has returned 204
+2020-02-20 12:04:11,521:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127583236391057 has received 
+2020-02-20 12:04:11,588:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:11,588:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 74, 'op': 0, 'd': {'id': '680127583236391057', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:11,588:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:11,588:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:04:11,588:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:04:11,687:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:11,688:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 75, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:12.620000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127585824276511', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:11,689:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:11,689:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:04:11,714:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:04:11,715:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127585824276511', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:04:12.620000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:04:15,217:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:15,218:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 76, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225456, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:15,218:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:15,219:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:04:15,729:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:15,730:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 77, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:16.599000+00:00', 'pinned': False, 'nonce': '680127597853540352', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127602513412101', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'christen', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:15,730:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:15,731:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:04:15,933:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127602513412101 with None has returned 204
+2020-02-20 12:04:15,934:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127602513412101 has received 
+2020-02-20 12:04:15,936:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:15,936:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 78, 'op': 0, 'd': {'id': '680127602513412101', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:15,936:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:15,937:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:04:15,937:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:04:16,063:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:16,064:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 79, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:16.976000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127604094664787', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:16,064:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:16,065:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:04:16,073:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:04:16,074:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127604094664787', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:04:16.976000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:04:18,680:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:18,680:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 80, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:19.570000+00:00', 'pinned': False, 'nonce': '680127610499366912', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127614974951468', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'lord', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:18,681:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:18,681:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:04:24,647:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:24,647:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 81, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225465, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:24,648:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:24,648:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:04:25,567:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:25,567:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 82, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:26.443000+00:00', 'pinned': False, 'nonce': '680127639364567040', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127643802533932', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'praise', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:25,567:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:25,568:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:04:34,776:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:34,776:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 83, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:35.703000+00:00', 'pinned': False, 'nonce': '680127677390127104', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127682641788947', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'nigger\\', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:34,777:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:34,777:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:04:35,016:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127682641788947 with None has returned 204
+2020-02-20 12:04:35,016:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127682641788947 has received 
+2020-02-20 12:04:35,018:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:35,018:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 84, 'op': 0, 'd': {'id': '680127682641788947', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:35,018:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:35,018:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:04:35,018:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:04:35,163:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:35,163:DEBUG:discord.gateway: Keeping websocket alive with sequence 84.
+2020-02-20 12:04:35,164:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 85, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:36.119000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127684386357497', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:35,165:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:35,166:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:04:35,168:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:04:35,177:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:04:35,177:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127684386357497', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:04:36.119000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:04:35,271:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:35,271:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:04:35,272:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:56,465:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:56,465:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 86, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225497, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:56,465:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:56,466:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:04:57,405:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:04:57,406:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 87, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:04:57.970000+00:00', 'pinned': False, 'nonce': '680127771304787968', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127776035962880', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'rat', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:04:57,407:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:04:57,407:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:05:01,529:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:01,529:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 88, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225502, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:01,530:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:01,530:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:05:02,894:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:02,894:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 89, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:05:03.854000+00:00', 'pinned': False, 'nonce': '680127796067958784', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127800715378722', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'stupid child', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:02,894:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:02,895:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:05:03,251:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127800715378722 with None has returned 204
+2020-02-20 12:05:03,252:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127800715378722 has received 
+2020-02-20 12:05:03,289:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:03,290:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 90, 'op': 0, 'd': {'id': '680127800715378722', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:03,290:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:03,290:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:05:03,291:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:05:03,393:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:03,394:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 91, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:05:04.346000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127802778845235', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:03,394:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:03,395:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:05:03,408:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:05:03,409:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127802778845235', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:05:04.346000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:05:06,520:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:06,521:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 92, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225507, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:06,521:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:06,522:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:05:11,652:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:11,652:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 93, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:05:12.592000+00:00', 'pinned': False, 'nonce': '680127832617123840', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127837365338118', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'you have no friends', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:11,652:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:11,652:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:05:16,169:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:16,169:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 94, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225517, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:16,170:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:16,170:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:05:16,421:DEBUG:discord.gateway: Keeping websocket alive with sequence 94.
+2020-02-20 12:05:16,421:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:05:16,533:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:16,533:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:05:16,533:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:24,442:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:24,442:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 95, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225525, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:24,442:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:24,442:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:05:29,664:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:29,664:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 96, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:05:30.610000+00:00', 'pinned': False, 'nonce': '680127908190093312', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127912938307640', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'shut the fuck up', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:29,664:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:29,665:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:05:29,972:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127912938307640 with None has returned 204
+2020-02-20 12:05:29,973:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127912938307640 has received 
+2020-02-20 12:05:29,976:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:29,976:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 97, 'op': 0, 'd': {'id': '680127912938307640', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:29,976:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:29,977:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:05:29,977:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:05:30,152:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:30,153:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 98, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:05:31.112000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127915043717170', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:30,154:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:30,155:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:05:30,166:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:05:30,167:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127915043717170', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:05:31.112000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:05:33,760:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:33,761:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 99, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225534, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:33,761:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:33,761:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:05:36,701:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:36,702:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 100, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:05:37.575000+00:00', 'pinned': False, 'nonce': '680127937848016896', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127942151503930', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'jgtfrdefuckvfcdxsz', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:36,702:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:36,702:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:05:36,880:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:36,881:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 101, 'op': 0, 'd': {'id': '680127942151503930', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:36,881:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:36,881:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:05:36,881:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:05:36,883:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127942151503930 with None has returned 204
+2020-02-20 12:05:36,883:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127942151503930 has received 
+2020-02-20 12:05:37,143:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:05:37,143:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127943925956680', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:05:37.998000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:05:37,145:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:37,146:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 102, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:05:37.998000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127943925956680', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:37,146:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:37,147:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:05:39,802:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:39,802:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 103, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225540, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:39,802:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:39,802:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:05:47,788:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:47,788:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 104, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225548, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:47,789:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:47,789:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:05:48,056:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:48,057:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 105, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:05:49.006000+00:00', 'pinned': False, 'nonce': '680127985361092608', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127990096593079', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'mhegfkhe rgekjfheifegi 3yfekfghfekjbfueyiuebfiehfbejhghbftuibuie fbkiug kbih kev ikbfk euhf lehboei boeh flebyf8euh ofuck0fhdkf buieb foeh8ofh eiufhe fbeiygf iefidbk dg idb ieg', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:48,057:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:48,058:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:05:48,300:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127990096593079 with None has returned 204
+2020-02-20 12:05:48,301:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680127990096593079 has received 
+2020-02-20 12:05:48,305:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:48,306:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 106, 'op': 0, 'd': {'id': '680127990096593079', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:48,306:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:48,307:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:05:48,307:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:05:48,438:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:48,438:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 107, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:05:49.393000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680127991719657685', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:05:48,438:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:05:48,438:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:05:48,460:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:05:48,460:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680127991719657685', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:05:49.393000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:05:57,672:DEBUG:discord.gateway: Keeping websocket alive with sequence 107.
+2020-02-20 12:05:57,673:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:05:57,774:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:05:57,774:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:05:57,774:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:06:38,924:DEBUG:discord.gateway: Keeping websocket alive with sequence 107.
+2020-02-20 12:06:38,926:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:06:39,027:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:06:39,028:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:06:39,028:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:07:20,178:DEBUG:discord.gateway: Keeping websocket alive with sequence 107.
+2020-02-20 12:07:20,179:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:07:20,286:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:07:20,286:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:07:20,286:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:08:01,432:DEBUG:discord.gateway: Keeping websocket alive with sequence 107.
+2020-02-20 12:08:01,432:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:08:01,535:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:08:01,535:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:08:01,535:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:08:24,699:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:08:24,699:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 108, 'op': 0, 'd': {'user_id': '312242775536173068', 'timestamp': 1582225705, 'member': {'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:08:24,699:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:08:24,700:DEBUG:discord.client: Dispatching event typing
+2020-02-20 12:08:26,714:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:08:26,714:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 109, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:08:27.627000+00:00', 'pinned': False, 'nonce': '680128650753867776', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680128655401418809', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '아니씨발쌔끼가', 'channel_id': '680124640852705307', 'author': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:08:26,715:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:08:26,715:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:08:27,023:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680128655401418809 with None has returned 204
+2020-02-20 12:08:27,023:DEBUG:discord.http: DELETE https://discordapp.com/api/v7/channels/680124640852705307/messages/680128655401418809 has received 
+2020-02-20 12:08:27,027:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:08:27,027:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_DELETE', 's': 110, 'op': 0, 'd': {'id': '680128655401418809', 'channel_id': '680124640852705307', 'guild_id': '674034866840666122'}}
+2020-02-20 12:08:27,027:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:08:27,027:DEBUG:discord.client: Dispatching event raw_message_delete
+2020-02-20 12:08:27,028:DEBUG:discord.client: Dispatching event message_delete
+2020-02-20 12:08:27,163:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:08:27,164:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 111, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-02-20T19:08:28.111000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '680128657431330844', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '674034866840666122'}}
+2020-02-20 12:08:27,165:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:08:27,166:DEBUG:discord.client: Dispatching event message
+2020-02-20 12:08:27,175:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages with {"content":"\uae08\uc9c0\uc5b4\uc785\ub2c8\ub2e4! / RESTRICTED WORD!"} has returned 200
+2020-02-20 12:08:27,176:DEBUG:discord.http: POST https://discordapp.com/api/v7/channels/680124640852705307/messages has received {'id': '680128657431330844', 'type': 0, 'content': '금지어입니다! / RESTRICTED WORD!', 'channel_id': '680124640852705307', 'author': {'id': '674818467563700244', 'username': '깨끗이', 'avatar': None, 'discriminator': '9159', 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2020-02-20T19:08:28.111000+00:00', 'edited_timestamp': None, 'flags': 0, 'nonce': None}
+2020-02-20 12:08:42,684:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:08:42,685:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:08:42,792:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:08:42,793:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:08:42,793:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:09:23,936:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:09:23,938:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:09:24,039:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:09:24,040:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:09:24,040:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:10:05,190:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:10:05,191:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:10:05,292:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:10:05,292:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:10:05,292:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:10:46,444:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:10:46,445:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:10:46,554:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:10:46,555:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:10:46,555:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:11:27,695:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:11:27,696:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:11:27,798:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:11:27,799:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:11:27,799:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:12:08,947:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:12:08,947:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:12:09,048:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:12:09,048:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:12:09,048:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:12:50,199:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:12:50,200:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:12:50,305:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:12:50,306:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:12:50,306:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:13:31,452:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:13:31,452:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:13:31,556:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:13:31,557:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:13:31,557:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:14:12,704:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:14:12,704:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:14:12,807:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:14:12,807:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:14:12,807:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:14:53,955:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:14:53,956:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:14:54,058:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:14:54,059:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:14:54,059:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:15:35,209:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:15:35,211:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:15:35,312:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:15:35,312:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:15:35,312:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 12:16:16,462:DEBUG:discord.gateway: Keeping websocket alive with sequence 111.
+2020-02-20 12:16:16,463:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 12:16:16,611:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 12:16:16,611:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 12:16:16,611:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:05:33,897:INFO:discord.gateway: Websocket closed with 1006 (), attempting a reconnect.
+2020-02-20 21:05:33,897:INFO:discord.client: Got a request to RESUME the websocket.
+2020-02-20 21:05:33,897:DEBUG:discord.client: Dispatching event disconnect
+2020-02-20 21:05:33,959:DEBUG:discord.client: Dispatching event disconnect
+2020-02-20 21:05:33,959:ERROR:discord.client: Attempting a reconnect in 1.14s
+Traceback (most recent call last):
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\connector.py", line 964, in _create_direct_connection
+    hosts = await asyncio.shield(self._resolve_host(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\connector.py", line 829, in _resolve_host
+    addrs = await \
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\resolver.py", line 29, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_events.py", line 821, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\client.py", line 499, in connect
+    await self._connect()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\client.py", line 469, in _connect
+    self.ws = await asyncio.wait_for(coro, timeout=180.0)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\asyncio\tasks.py", line 483, in wait_for
+    return fut.result()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\gateway.py", line 224, in from_client
+    gateway = await client.http.get_gateway()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\http.py", line 822, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\http.py", line 160, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\client.py", line 1012, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\client.py", line 480, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\connector.py", line 971, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discordapp.com:443 ssl:default [getaddrinfo failed]
+2020-02-20 21:05:48,371:DEBUG:discord.client: Dispatching event disconnect
+2020-02-20 21:05:48,371:ERROR:discord.client: Attempting a reconnect in 3.96s
+Traceback (most recent call last):
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\connector.py", line 964, in _create_direct_connection
+    hosts = await asyncio.shield(self._resolve_host(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\connector.py", line 829, in _resolve_host
+    addrs = await \
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\resolver.py", line 29, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_events.py", line 821, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\client.py", line 499, in connect
+    await self._connect()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\client.py", line 460, in _connect
+    self.ws = await asyncio.wait_for(coro, timeout=180.0)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\asyncio\tasks.py", line 483, in wait_for
+    return fut.result()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\gateway.py", line 224, in from_client
+    gateway = await client.http.get_gateway()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\http.py", line 822, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\http.py", line 160, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\client.py", line 1012, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\client.py", line 480, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiohttp\connector.py", line 971, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discordapp.com:443 ssl:default [getaddrinfo failed]
+2020-02-20 21:05:52,397:DEBUG:discord.http: GET https://discordapp.com/api/v7/gateway with None has returned 200
+2020-02-20 21:05:52,397:DEBUG:discord.http: GET https://discordapp.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2020-02-20 21:05:52,691:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2020-02-20 21:05:52,691:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:05:52,691:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-h9cd",{"micros":0.0}]']}}
+2020-02-20 21:05:52,692:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:05:52,692:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:05:52,787:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:05:52,787:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2020-02-20 21:05:52,795:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:05:52,795:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:05:52,796:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:05:52,935:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:05:52,936:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': '깨끗이', 'mfa_enabled': False, 'id': '674818467563700244', 'email': None, 'discriminator': '9159', 'bot': True, 'avatar': None}, 'session_id': 'ae29dc6d4d2f37fedee4fdce86241e80', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '674034866840666122'}], 'application': {'id': '674818467563700244', 'flags': 0}, '_trace': ['["gateway-prd-main-h9cd",{"micros":45528,"calls":["discord-sessions-prd-1-3",{"micros":40064,"calls":["start_session",{"micros":36813,"calls":["api-prd-main-cq1m",{"micros":33057,"calls":["get_user",{"micros":4673},"add_authorized_ip",{"micros":1897},"get_guilds",{"micros":2018},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}]']}}
+2020-02-20 21:05:52,936:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:05:52,936:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-h9cd",{"micros":45528,"calls":["discord-sessions-prd-1-3",{"micros":40064,"calls":["start_session",{"micros":36813,"calls":["api-prd-main-cq1m",{"micros":33057,"calls":["get_user",{"micros":4673},"add_authorized_ip",{"micros":1897},"get_guilds",{"micros":2018},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: ae29dc6d4d2f37fedee4fdce86241e80).
+2020-02-20 21:05:52,946:DEBUG:discord.client: Dispatching event connect
+2020-02-20 21:05:52,946:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:05:52,946:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'large': False, 'features': [], 'rules_channel_id': None, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'member_count': 2, 'afk_channel_id': None, 'region': 'us-west', 'vanity_url_code': None, 'presences': [{'user': {'id': '312242775536173068'}, 'status': 'dnd', 'game': None, 'client_status': {'desktop': 'dnd'}, 'activities': []}, {'user': {'id': '674818467563700244'}, 'status': 'online', 'game': None, 'client_status': {'web': 'online'}, 'activities': []}], 'channels': [{'user_limit': 0, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '674034867570212868', 'bitrate': 64000}, {'user_limit': 0, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '674034867570212870', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '674034867570212868', 'name': 'general', 'last_message_id': '674855471659614218', 'id': '674034867570212872'}, {'user_limit': 0, 'type': 2, 'position': 0, 'permission_overwrites': [], 'parent_id': '674034867570212870', 'name': 'General', 'id': '674034867570212874', 'bitrate': 64000}, {'user_limit': 0, 'type': 4, 'position': 1, 'permission_overwrites': [], 'name': 'Discord Bots', 'id': '674818670542848010', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '674818670542848010', 'name': '깨끗이', 'last_message_id': '680120827202633758', 'id': '674818695624785936'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [], 'parent_id': '674818670542848010', 'name': 'clean', 'last_message_id': '680122093186318342', 'id': '680120877681213477'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 3, 'permission_overwrites': [], 'parent_id': '674818670542848010', 'name': 'sdffdsfds', 'last_message_id': '680122827629789284', 'id': '680122283385421866'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 4, 'permission_overwrites': [], 'parent_id': '674818670542848010', 'name': 'fsdasf', 'last_message_id': '680128657431330844', 'id': '680124640852705307'}], 'system_channel_id': '674034867570212872', 'public_updates_channel_id': None, 'roles': [{'position': 0, 'permissions': 104324673, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '674034866840666122', 'hoist': False, 'color': 0}, {'position': 1, 'permissions': 104324681, 'name': 'new role', 'mentionable': False, 'managed': False, 'id': '675001628276817921', 'hoist': False, 'color': 0}], 'icon': '18edfec9152cc12bc39f82d6c8bdacbb', 'members': [{'user': {'username': 'superjoy', 'id': '312242775536173068', 'discriminator': '4722', 'avatar': '4ac27325eb42f6bd4bb7616b295156ea'}, 'roles': [], 'mute': False, 'joined_at': '2020-02-03T23:33:55.371000+00:00', 'hoisted_role': None, 'deaf': False}, {'user': {'username': '깨끗이', 'id': '674818467563700244', 'discriminator': '9159', 'bot': True, 'avatar': None}, 'roles': ['675001628276817921'], 'mute': False, 'joined_at': '2020-02-06T05:54:42.605000+00:00', 'hoisted_role': None, 'deaf': False}], 'afk_timeout': 300, 'name': 'KDW Journals', 'application_id': None, 'premium_tier': 0, 'preferred_locale': 'en-US', 'splash': None, 'voice_states': [], 'mfa_level': 0, 'premium_subscription_count': 0, 'default_message_notifications': 0, 'owner_id': '312242775536173068', 'description': None, 'banner': None, 'emojis': [], 'unavailable': False, 'verification_level': 0, 'id': '674034866840666122', 'system_channel_flags': 0, 'discovery_splash': None, 'explicit_content_filter': 0, 'lazy': True}}
+2020-02-20 21:05:52,947:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:05:52,947:DEBUG:discord.client: Dispatching event guild_available
+2020-02-20 21:05:54,947:DEBUG:discord.client: Dispatching event ready
+2020-02-20 21:05:56,501:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-02-20 21:06:34,037:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:06:34,037:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:06:34,141:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:06:34,141:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:06:34,141:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:07:15,288:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:07:15,289:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:07:15,400:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:07:15,401:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:07:15,401:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:07:56,542:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:07:56,542:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:07:56,669:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:07:56,669:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:07:56,670:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:08:37,794:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:08:37,796:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:08:38,224:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:08:38,225:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:08:38,225:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:09:19,047:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:09:19,047:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:09:19,148:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:09:19,149:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:09:19,149:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:10:00,299:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:10:00,299:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:10:00,398:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:10:00,398:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:10:00,398:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:10:41,551:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:10:41,551:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:10:41,652:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:10:41,653:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:10:41,653:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:11:22,803:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:11:22,803:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:11:22,906:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:11:22,907:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:11:22,907:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:12:04,054:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:12:04,054:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:12:04,157:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:12:04,157:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:12:04,157:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:12:45,305:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:12:45,305:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:12:45,409:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:12:45,409:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:12:45,410:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:13:26,557:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:13:26,557:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:13:26,658:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:13:26,658:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:13:26,658:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:14:07,809:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:14:07,809:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:14:07,911:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:14:07,911:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:14:07,911:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:14:49,060:DEBUG:discord.gateway: Keeping websocket alive with sequence 2.
+2020-02-20 21:14:49,060:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-02-20 21:14:49,161:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-02-20 21:14:49,161:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-02-20 21:14:49,161:DEBUG:discord.client: Dispatching event socket_response
+2020-02-20 21:14:53,682:INFO:discord.client: Received signal to terminate bot and event loop.
+2020-02-20 21:14:53,682:INFO:discord.client: Cleaning up tasks.
+2020-02-20 21:14:53,682:INFO:discord.client: Cleaning up after 4 tasks.
+2020-02-20 21:14:53,859:INFO:discord.client: Closing the event loop.
