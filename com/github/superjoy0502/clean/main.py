@@ -2,7 +2,7 @@
 import discord  # 라이브러리 임포트
 import logging
 
-import myFunctions
+from com.github.superjoy0502.clean.messageFiltering import *
 import typing
 from discord.ext import commands
 
@@ -35,7 +35,7 @@ async def on_message(message):  # 메세지가 입력되었을 때
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
-    if myFunctions.messagecheck(message.content, 금지어):
+    if messagecheck(message.content, 금지어):
         await message.delete()
         await message.channel.send("금지어입니다! / RESTRICTED WORD!")
 
