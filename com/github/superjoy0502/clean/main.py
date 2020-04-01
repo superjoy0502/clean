@@ -2,7 +2,8 @@
 import discord  # 라이브러리 임포트
 import logging
 
-from com.github.superjoy0502.clean.messageFiltering import *
+from com.github.superjoy0502.clean.filtering.messageFiltering import *
+from com.github.superjoy0502.clean.resources.token import getToken
 import typing
 from discord.ext import commands
 
@@ -36,4 +37,4 @@ async def test(ctx, arg):
     await ctx.send(arg)
 
 
-client.run('Njc0ODE4NDY3NTYzNzAwMjQ0.XjupgA.c76Gr_TDRChOJtSVjYfCckJK1mU') # 깜빡하고 코드를 안지웠습니다. 악용 방지를 위해 봇 코드를 재생성합니다. 옆의 코드는 이제 아무 코드도 아닙니다.
+client.run(getToken())
